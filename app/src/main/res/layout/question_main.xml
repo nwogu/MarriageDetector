@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.marriagedetector.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Carefully and truthfully select one option from each question set."
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/question1"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her?"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/yesQuestion1"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/noQuestion1"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/question2"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/yesQuestion2"
+                android:textColor="#ffffff"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/noQuestion2"
+                android:textColor="#ffffff"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/question3"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/yesQuestion3"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion3"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question4"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/yesQuestion4"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/noQuestion4"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question5"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion5"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion5"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question6"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion6"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion6"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question7"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion7"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion7"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question8"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion8"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion8"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question9"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion9"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion9"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question10"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion10"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion10"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question11"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion11"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion11"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question12"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion12"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion12"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question13"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion13"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion13"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question14"
+                android:layout_margin="8dp"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion14"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion14"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question15"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion15"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion15"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question16"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion16"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion16"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question17"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion17"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion17"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question18"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion18"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion18"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question19"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion19"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion19"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question20"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion20"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion20"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question21"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion21"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion21"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question22"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion22"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion22"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question23"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion23"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion23"/>
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question24"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion24"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion24"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question25"
+                android:text="1. Am I ready to be with him/her?  "
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion25"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion25"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:id="@+id/question26"
+                android:text="1. Am I ready to be with him/her? "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/yesQuestion26"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/noQuestion26"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:onClick="startAnswers"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

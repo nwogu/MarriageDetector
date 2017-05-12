@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Marriage Detector</string>
+    <string name="partner_name">Partner</string>
+    <string name="person_name">Name</string>
+</resources>

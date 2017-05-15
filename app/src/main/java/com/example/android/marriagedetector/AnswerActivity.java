@@ -69,7 +69,7 @@ public class AnswerActivity extends MainActivity {
     public void composeMessage(String message) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        //intent.setPackage("com.whatsapp");
+        intent.setPackage("com.whatsapp");
         intent.putExtra(Intent.EXTRA_TEXT, message);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);

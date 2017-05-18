@@ -23,7 +23,7 @@
         android:text="name"
         android:textAlignment="center"
         android:id="@+id/answer"
-        android:textAppearance="?android:textAppearanceMedium"/>
+        android:textAppearance="?android:textAppearanceLarge"/>
 
 </LinearLayout>
     <Button
